@@ -11,9 +11,9 @@ public class MarkedPlot extends DecoratedPlot {
         drawable.draw(g, numberList);
         g.setColor(Color.BLUE);
         for (int j = 1; j < numberList.size(); j++) {
-            g.fillRect(40 * j - 2,
-                    (170 - (15 * numberList.get(j))) - 2,
-                    4, 4);
+            g.fillRect(40 * j - 3,
+                    (170 - (15 * numberList.get(j))) - 3,
+                    6, 6);
         }
     }
 }
