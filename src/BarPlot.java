@@ -12,8 +12,8 @@ public class BarPlot extends DecoratedPlot {
         g.setColor(Color.GRAY);
         for (int k = 1; k < numberList.size(); k++) {
             g.fillRect(40 * k - 3,
-                    (170 - (15 * numberList.get(k))) + 3, 6,
-                    (15 * numberList.get(k)) - 6 + 30);
+                    (170 - (3 * numberList.get(k) / 4)) + 3, 6,
+                    (3 * numberList.get(k) / 4) - 6 + 30);
         }
     }
 }

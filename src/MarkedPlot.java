@@ -12,7 +12,7 @@ public class MarkedPlot extends DecoratedPlot {
         g.setColor(Color.BLUE);
         for (int j = 1; j < numberList.size(); j++) {
             g.fillRect(40 * j - 3,
-                    (170 - (15 * numberList.get(j))) - 3,
+                    (170 - (3 * numberList.get(j) / 4)) - 3,
                     6, 6);
         }
     }

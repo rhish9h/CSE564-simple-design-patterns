@@ -15,7 +15,7 @@ public class Source extends Observable {
 
     public void updateNumberList() {
         int MIN = 1;
-        int MAX = 10;
+        int MAX = 200;
         int range = MAX - MIN + 1;
         if (numberList.size() == 11) {
             numberList.remove(0);
