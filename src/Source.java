@@ -17,7 +17,7 @@ public class Source extends Observable {
 
     public void updateNumberList() {
         int range = MAX - MIN + 1;
-        if (numberList.size() == 10) {
+        if (numberList.size() == 11) {
             numberList.remove(0);
         }
         int rand = (int)(Math.random() * range) + MIN;

@@ -1,3 +1,6 @@
+import java.awt.*;
+import java.util.List;
+
 public class BarPlot extends DecoratedPlot {
     BarPlot(Drawable drawable) {
         super(drawable);
@@ -5,7 +8,7 @@ public class BarPlot extends DecoratedPlot {
     }
 
     @Override
-    public void draw() {
-        drawable.draw();
+    public void draw(Graphics g, List<Integer> numberList) {
+        drawable.draw(g, numberList);
     }
 }
