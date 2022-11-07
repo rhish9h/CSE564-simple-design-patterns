@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class App extends JFrame implements ActionListener {
-    private Source source;
+    private final Source source;
     private Looper looper;
 
     App(String title) {
@@ -35,7 +35,7 @@ public class App extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        App app = new App("Simple Design Patterns");
+        new App("Simple Design Patterns");
     }
 
     @Override
@@ -52,7 +52,7 @@ public class App extends JFrame implements ActionListener {
 
     class Looper implements Runnable {
 
-        private AtomicBoolean keepRunning;
+        private final AtomicBoolean keepRunning;
 
         public Looper() {
             keepRunning = new AtomicBoolean(true);

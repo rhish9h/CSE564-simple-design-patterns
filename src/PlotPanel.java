@@ -24,9 +24,7 @@ public class PlotPanel extends JPanel implements Observer {
                 setBackground(Color.lightGray);
                 plot = new MarkedPlot(new SimplePlot());
             }
-            case BAR_MARKED_SIMPLE -> {
-                plot = new BarPlot(new MarkedPlot(new SimplePlot()));
-            }
+            case BAR_MARKED_SIMPLE -> plot = new BarPlot(new MarkedPlot(new SimplePlot()));
         }
 
         setVisible(true);
