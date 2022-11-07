@@ -12,8 +12,8 @@ public class Evaluator {
         return _instance;
     }
 
-    public double getAverageOf(List<Integer> numberList) {
-        double sum = 0D;
+    public int getAverageOf(List<Integer> numberList) {
+        int sum = 0;
         int size = numberList.size();
 
         for (int num : numberList) {

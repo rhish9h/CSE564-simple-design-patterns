@@ -8,6 +8,7 @@ public class PlotPanel extends JPanel implements Observer {
     PlotType plotType;
     Drawable plot;
     List<Integer> numberList;
+    int average;
 
     public PlotPanel(PlotType plotType) {
         this.plotType = plotType;
@@ -35,13 +36,19 @@ public class PlotPanel extends JPanel implements Observer {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         plot.draw(g, numberList);
+
+        if (numberList.size() >= 2) {
+            g.setColor(Color.red);
+            int y = 170 - 15 * average;
+            g.drawLine(0, y, 400, y);
+        }
     }
 
     @Override
     public void update(Observable o, Object arg) {
         Source source = (Source) o;
         numberList = source.getNumberList();
-        double average = Evaluator.getInstance().getAverageOf(source.getNumberList());
+        average = Evaluator.getInstance().getAverageOf(source.getNumberList());
         repaint();
     }
 }
