@@ -2,9 +2,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class App extends JFrame implements ActionListener {
     private Source source;
+    private Looper looper;
 
     App(String title) {
         super(title);
@@ -38,6 +40,39 @@ public class App extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        source.updateNumberList();
+        if (looper == null) {
+            looper = new Looper();
+            Thread t = new Thread(looper);
+            t.start();
+        } else {
+            looper.stop();
+            looper = null;
+        }
+    }
+
+    class Looper implements Runnable {
+
+        private AtomicBoolean keepRunning;
+
+        public Looper() {
+            keepRunning = new AtomicBoolean(true);
+        }
+
+        public void stop() {
+            keepRunning.set(false);
+        }
+
+        @Override
+        public void run() {
+            while (keepRunning.get()) {
+                source.updateNumberList();
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        }
+
     }
 }
