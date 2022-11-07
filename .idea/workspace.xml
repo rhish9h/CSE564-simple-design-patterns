@@ -7,12 +7,7 @@
     <list default="true" id="59bcdea2-701c-4c6f-b194-29a14827470f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BarPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BarPlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Drawable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MarkedPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkedPlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlotPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimplePlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimplePlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Source.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

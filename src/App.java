@@ -16,6 +16,7 @@ public class App extends JFrame implements ActionListener {
         source.addObserver(simplePanel);
         source.addObserver(markedSimplePanel);
         source.addObserver(barMarkedSimplePanel);
+        add(markedSimplePanel);
         add(simplePanel);
 
         setSize(400, 800);
