@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59bcdea2-701c-4c6f-b194-29a14827470f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BarPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BarPlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MarkedPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarkedPlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DecoratedPlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DecoratedPlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlotPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimplePlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimplePlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Source.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/sohampatil/Desktop/Study/CSE-564/Assignment 3/CSE564-simple-design-patterns"
   }
 }]]></component>
   <component name="RunManager">

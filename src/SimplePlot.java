@@ -11,7 +11,6 @@ public class SimplePlot implements Drawable {
         if (numberList == null || numberList.size() <= 1) {
             return;
         }
-        System.out.println(numberList);
         g.drawLine(0, (170 - (3 * numberList.get(0) / 4)), 40, (170 - (3 * numberList.get(1) / 4)));
 
         for (int i = 1; i < numberList.size() - 1; i++) {

@@ -5,13 +5,11 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class PlotPanel extends JPanel implements Observer {
-    PlotType plotType;
-    Drawable plot;
-    List<Integer> numberList;
-    int average;
+    private Drawable plot;
+    private List<Integer> numberList;
+    private int average;
 
     public PlotPanel(PlotType plotType) {
-        this.plotType = plotType;
         Source source = new Source();
         numberList = source.getNumberList();
 
@@ -37,7 +35,7 @@ public class PlotPanel extends JPanel implements Observer {
 
         if (numberList.size() >= 2) {
             g.setColor(Color.red);
-            int y = 170 - 15 * average;
+            int y = 170 - 3 * average / 4;
             g.drawLine(0, y, 400, y);
         }
     }
