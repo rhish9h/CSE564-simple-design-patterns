@@ -9,22 +9,10 @@ public class PlotPanel extends JPanel implements Observer {
     private List<Integer> numberList;
     private int average;
 
-    public PlotPanel(PlotType plotType) {
+    public PlotPanel(Drawable plot) {
         Source source = new Source();
         numberList = source.getNumberList();
-
-        switch (plotType) {
-            case SIMPLE -> {
-                setBackground(Color.gray);
-                plot = new SimplePlot();
-            }
-            case MARKED_SIMPLE -> {
-                setBackground(Color.lightGray);
-                plot = new MarkedPlot(new SimplePlot());
-            }
-            case BAR_MARKED_SIMPLE -> plot = new BarPlot(new MarkedPlot(new SimplePlot()));
-        }
-
+        this.plot = plot;
         setVisible(true);
     }
 

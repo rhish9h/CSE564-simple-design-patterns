@@ -12,9 +12,11 @@ public class App extends JFrame implements ActionListener {
         super(title);
         source = new Source();
 
-        PlotPanel simplePanel = new PlotPanel(PlotType.SIMPLE);
-        PlotPanel markedSimplePanel = new PlotPanel(PlotType.MARKED_SIMPLE);
-        PlotPanel barMarkedSimplePanel = new PlotPanel(PlotType.BAR_MARKED_SIMPLE);
+        PlotPanel simplePanel = new PlotPanel(new SimplePlot());
+        simplePanel.setBackground(Color.gray);
+        PlotPanel markedSimplePanel = new PlotPanel(new MarkedPlot(new SimplePlot()));
+        markedSimplePanel.setBackground(Color.lightGray);
+        PlotPanel barMarkedSimplePanel = new PlotPanel(new BarPlot(new MarkedPlot(new SimplePlot())));
         source.addObserver(simplePanel);
         source.addObserver(markedSimplePanel);
         source.addObserver(barMarkedSimplePanel);
