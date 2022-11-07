@@ -9,15 +9,23 @@ public class App extends JFrame implements ActionListener {
     App(String title) {
         super(title);
         source = new Source();
-        PlotPanel panel = new PlotPanel();
-        source.addObserver(panel);
+
+        PlotPanel simplePanel = new PlotPanel(PlotType.SIMPLE);
+        PlotPanel markedSimplePanel = new PlotPanel(PlotType.MARKED_SIMPLE);
+        PlotPanel barMarkedSimplePanel = new PlotPanel(PlotType.BAR_MARKED_SIMPLE);
+        source.addObserver(simplePanel);
+        source.addObserver(markedSimplePanel);
+        source.addObserver(barMarkedSimplePanel);
+
         setSize(400, 800);
         setLayout(new GridLayout(4,1));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
+
         JButton runButton = new JButton("Run");
         runButton.addActionListener(this);
         add(runButton);
+
         setVisible(true);
     }
 

@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59bcdea2-701c-4c6f-b194-29a14827470f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Evaluator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BarPlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DecoratedPlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Drawable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MarkedPlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PlotType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SimplePlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlotPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlotPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
