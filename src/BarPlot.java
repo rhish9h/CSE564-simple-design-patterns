@@ -1,6 +1,12 @@
 import java.awt.*;
 import java.util.List;
 
+/**
+ * Decorated Plot that decorates Drawable
+ * Plots bar plot in the Plot panel
+ * <p>
+ * Pattern Used - Decorator
+ */
 public class BarPlot extends DecoratedPlot {
     BarPlot(Drawable drawable) {
         super(drawable);

@@ -1,9 +1,13 @@
 import java.awt.*;
 import java.util.List;
 
+/**
+ * Basic plot used by Decorator to decorate
+ * <p>
+ * Pattern Used - Decorator
+ */
 public class SimplePlot implements Drawable {
     SimplePlot() {
-
     }
 
     @Override
@@ -15,7 +19,7 @@ public class SimplePlot implements Drawable {
 
         for (int i = 1; i < numberList.size() - 1; i++) {
             g.drawLine(40 * (i), (170 - (3 * numberList.get(i) / 4)),
-                    40 * (i + 1), (170 - (3 * numberList.get(i+1) / 4)));
+                    40 * (i + 1), (170 - (3 * numberList.get(i + 1) / 4)));
         }
     }
 }

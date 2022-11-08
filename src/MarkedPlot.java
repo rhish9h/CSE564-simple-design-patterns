@@ -1,6 +1,12 @@
 import java.awt.*;
 import java.util.List;
 
+/**
+ * Decorated Plot that decorates Drawable
+ * Plots marked plot in the Plot panel - squares at points
+ * <p>
+ * Pattern Used - Decorator
+ */
 public class MarkedPlot extends DecoratedPlot {
     MarkedPlot(Drawable drawable) {
         super(drawable);

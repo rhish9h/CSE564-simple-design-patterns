@@ -4,10 +4,24 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * Main Frame of the application
+ * Displays 3 panels of graphs - 1 basic and 2 decorated graphs
+ * 4th panel has run button - clicking this will start the application loop
+ * <p>
+ * Pattern Used - Decorator - different PlotPanels are created using decorator pattern
+ * Pattern Used - Observer - Each of the PlotPanels are observers of the data source
+ */
 public class App extends JFrame implements ActionListener {
     private final Source source;
     private Looper looper;
 
+    /**
+     * Initialization of the application
+     * <p>
+     *
+     * @param title of the application
+     */
     App(String title) {
         super(title);
         source = new Source();
@@ -25,7 +39,7 @@ public class App extends JFrame implements ActionListener {
         add(simplePanel);
 
         setSize(400, 800);
-        setLayout(new GridLayout(4,1));
+        setLayout(new GridLayout(4, 1));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -36,6 +50,11 @@ public class App extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    /**
+     * Main Driver method
+     *
+     * @param args standard main args
+     */
     public static void main(String[] args) {
         new App("Simple Design Patterns");
     }
@@ -52,6 +71,10 @@ public class App extends JFrame implements ActionListener {
         }
     }
 
+    /**
+     * Looper class is used to run the random number generation loop
+     * This will call the updateNumberList method every 200ms
+     */
     class Looper implements Runnable {
 
         private final AtomicBoolean keepRunning;
@@ -75,6 +98,5 @@ public class App extends JFrame implements ActionListener {
                 }
             }
         }
-
     }
 }
