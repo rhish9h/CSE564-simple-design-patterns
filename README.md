@@ -2,8 +2,10 @@
 
 ## Plot randomly generated data points in real time - uses java design patterns in the backend
 
-![Before Running](resources/before_running.png?raw=true "Before Running")
-![After Running](resources/after_running.png?raw=true "After Running")
+<p>
+  <img src="resources/before_running.png" width="45%">
+  <img src="resources/after_running.png" width="45%">
+</p>
 
 The application has 4 different panels in one column. The bottommost panel is a RUN button. Click this button to start 
 program. Periodically, a new point will be added and the graph will be updated in real time.
